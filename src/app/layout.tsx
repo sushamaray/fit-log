@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
+
 import "./globals.css";
+
 import { FitLogProvider } from "@/context/FitLogContext";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata: Metadata = {
   title: "FitLog — Workout Library",
@@ -16,7 +20,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <FitLogProvider>{children}</FitLogProvider>
+        <FitLogProvider>
+          {children}
+
+          <ToastContainer
+            position="bottom-right"
+            theme="dark"
+            autoClose={2500}
+          />
+        </FitLogProvider>
       </body>
     </html>
   );
