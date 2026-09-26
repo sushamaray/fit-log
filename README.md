@@ -8,9 +8,9 @@ The application uses a dark, focused gym-inspired interface designed to make wor
 
 ## 🚀 Live Project
 
-**Live Link:** Add your deployed link here
+**Live Link:** https://fit-log-sushamaray.vercel.app/
 
-**GitHub Repository:** Add your GitHub repository link here
+**GitHub Repository:** https://github.com/sushamaray/fit-log
 
 ---
 
