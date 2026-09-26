@@ -5,7 +5,7 @@ import { ArrowDownRight } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-white/10 bg-[#0b0b0b]">
-      <div className="mx-auto grid min-h-[620px] max-w-7xl items-center px-5 py-16 sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:px-10 lg:py-20">
+      <div className="mx-auto grid min-h-[620px] max-w-7xl items-center px-5 py-16 sm:px-8 lg:grid-cols-[1.3fr_0.7fr] lg:px-10 lg:py-20">
         
         {/* Left Content */}
         <div className="relative z-10">
@@ -13,7 +13,7 @@ export default function Hero() {
             WORKOUT LIBRARY
           </p>
 
-          <h1 className="mt-5 max-w-4xl text-5xl font-black uppercase leading-[0.92] tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl xl:text-8xl">
+          <h1 className="mt-5 max-w-4xl text-5xl font-black uppercase leading-[0.92] tracking-[-0.04em] text-white sm:text-6xl lg:text-[5.5rem] xl:text-[6.5rem]">
             TRAIN WITH INTENT.
             <br />
             LOG EVERY SET.
@@ -44,7 +44,7 @@ export default function Hero() {
             width={500}
             height={500}
             priority
-            className="relative z-10 h-auto w-[330px] object-contain sm:w-[400px] lg:w-[500px]"
+            className="relative z-10 h-auto w-[300px] object-contain sm:w-[360px] lg:w-[430px]"
           />
         </div>
 
