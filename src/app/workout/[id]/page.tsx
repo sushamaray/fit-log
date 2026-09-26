@@ -4,6 +4,7 @@ import { ArrowLeft, Check, Dumbbell } from "lucide-react";
 
 import { getWorkout } from "@/lib/api";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import WorkoutActions from "@/components/WorkoutActions";
 
 interface WorkoutDetailsPageProps {
@@ -51,6 +52,8 @@ export default async function WorkoutDetailsPage({
             </div>
           </div>
         </main>
+
+        <Footer />
       </>
     );
   }
@@ -218,6 +221,8 @@ export default async function WorkoutDetailsPage({
           </div>
         </div>
       </main>
+
+      <Footer />
     </>
   );
 }
