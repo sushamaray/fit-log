@@ -1,21 +1,21 @@
-import { getWorkouts } from "@/lib/api";
+"use client";
 
-export default async function Home() {
-  const workouts = await getWorkouts();
+import { useFitLog } from "@/context/FitLogContext";
+
+export default function Home() {
+  const {
+    plan,
+    saved,
+    completed,
+  } = useFitLog();
 
   return (
     <main>
       <h1>FitLog</h1>
 
-      <p>Total workouts: {workouts.length}</p>
-
-      {workouts.map((workout) => (
-        <div key={workout.id}>
-          <h2>{workout.name}</h2>
-          <p>{workout.equipment}</p>
-          <p>{workout.duration} min</p>
-        </div>
-      ))}
+      <p>Plan: {plan.length}</p>
+      <p>Saved: {saved.length}</p>
+      <p>Completed: {completed.length}</p>
     </main>
   );
 }
